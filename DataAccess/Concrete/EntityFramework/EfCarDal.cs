@@ -1,5 +1,6 @@
 ﻿using Core.DataAccess.EntityFramework;
 using DataAccess.Abstract;
+using DataAccess.Concrete.EntityFramework.Context;
 using Entities.Concrete;
 using Entities.DTOs;
 using Microsoft.EntityFrameworkCore;
@@ -13,24 +14,61 @@ namespace DataAccess.Concrete.EntityFramework
 {
     public class EfCarDal : EfEntityRepositoryBase<Car, RentACarContext>, ICarDal
     {
-        public List<CarDetailDto> GetCarDetails()
+        public List<CarDetailDto> GetCarsDetails(Expression<Func<CarDetailDto, bool>> filter = null)
         {
-            using (RentACarContext context = new RentACarContext())
+            using (ReCapDbContext context = new ReCapDbContext())
             {
-                var result = from c in context.Cars
-                             join b in context.Brands
-                             on c.BrandId equals b.BrandId
-                             join co in context.Colors
-                             on c.ColorId equals co.ColorId
-                             select new CarDetailDto
+                var result = from car in context.Cars
+
+                             join color in context.Colors
+                             on car.ColorId equals color.ColorId
+
+                             join brand in context.Brands
+                             on car.BrandId equals brand.BrandId
+
+                             select new CarDetailDto()
                              {
-                                 CarName = c.CarName,
-                                 BrandName = b.BrandName,
-                                 ColorName = co.ColorName,
-                                 DailyPrice = c.DailyPrice
+                                 Id = car.Id,
+                                 Description = car.Description,
+                                 BrandId = brand.BrandId,
+                                 BrandName = brand.Name,
+                                 ColorId = color.ColorId,
+                                 ColorName = color.Name,
+                                 DailyPrice = car.DailyPrice,
+                                 ModelYear = car.ModelYear,
+                                 MinFindexScore = car.MinFindexScore
                              };
 
-                return result.ToList();
+                return filter == null ? result.ToList() : result.Where(filter).ToList();
+            }
+        }
+
+        public CarDetailDto GetCarDetails(int carId)
+        {
+            using (ReCapDbContext context = new ReCapDbContext())
+            {
+                var result = from car in context.Cars.Where(c => c.Id == carId)
+
+                             join color in context.Colors
+                             on car.ColorId equals color.ColorId
+
+                             join brand in context.Brands
+                             on car.BrandId equals brand.BrandId
+
+                             select new CarDetailDto()
+                             {
+                                 BrandId = brand.BrandId,
+                                 ColorId = color.ColorId,
+                                 BrandName = brand.Name,
+                                 ColorName = color.Name,
+                                 DailyPrice = car.DailyPrice,
+                                 Description = car.Description,
+                                 ModelYear = car.ModelYear,
+                                 Id = car.Id,
+                                 MinFindexScore = car.MinFindexScore
+                             };
+
+                return result.SingleOrDefault();
             }
         }
     }

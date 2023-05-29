@@ -6,27 +6,28 @@ using System;
 using System.Collections.Generic;
 using System.Text;
 using System.Linq;
+using DataAccess.Concrete.EntityFramework.Context;
 
 namespace DataAccess.Concrete.EntityFramework
 {
     public class EfCustomerDal: EfEntityRepositoryBase<Customer, RentACarContext>, ICustomerDal
     {
-        public List<CustomerDetailDto> GetCustomerDetails()
+        public List<CustomerDetailDto> GetCustomerDetailDto(Expression<Func<Customer, bool>> filter = null)
         {
-            using (RentACarContext context = new RentACarContext())
+            using (ReCapDbContext context = new ReCapDbContext())
             {
-                var result = from c in context.Customers
-                             join u in context.Users
-                             on c.UserId equals u.Id
-                             select new CustomerDetailDto
-                             {
-                                 CustomerId = c.CustomerId,
-                                 FirstName = u.FirstName,
-                                 LastName = u.LastName,
-                                 Email = u.Email,
-                                 CompanyName = c.CompanyName
-                             };
+                var result = from customer in filter is null ? context.Customers : context.Customers.Where(filter)
 
+                             join user in context.Users on customer.UserId equals user.Id
+                             select new CustomerDetailDto()
+                             {
+                                 CustomerId = customer.Id,
+                                 CompanyName = customer.CompanyName,
+                                 FirstName = user.FirstName,
+                                 LastName = user.LastName,
+                                 Email = user.Email,
+                                 FindexScore = customer.FindexScore
+                             };
                 return result.ToList();
             }
         }

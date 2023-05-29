@@ -10,12 +10,10 @@ namespace Business.ValidationRules.FluentValidation
     {
         public UserValidator()
         {
-            RuleFor(u => u.FirstName).NotEmpty();
-            RuleFor(u => u.LastName).NotEmpty();
-            RuleFor(u => u.FirstName).MaximumLength(2);
-            RuleFor(u => u.LastName).MaximumLength(2);
-            RuleFor(u => u.Email).NotEmpty();
-            RuleFor(u => u.Age).GreaterThanOrEqualTo(21);
+            RuleFor(u => u.FirstName).NotNull().MaximumLength(20);
+            RuleFor(u => u.LastName).NotNull().MaximumLength(20);
+            RuleFor(u => u.Email).NotNull().EmailAddress();
+
 
         }
     }

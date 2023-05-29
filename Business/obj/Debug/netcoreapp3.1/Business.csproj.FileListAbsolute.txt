@@ -1,0 +1,5 @@
+C:\Users\KUTAY\Desktop\University 2022-2023-2\YMG Github Dosyası\RentACar University\ymg-donem-projesi-182523059\Business\obj\Debug\netcoreapp3.1\Business.csproj.AssemblyReference.cache
+C:\Users\KUTAY\Desktop\University 2022-2023-2\YMG Github Dosyası\RentACar University\ymg-donem-projesi-182523059\Business\obj\Debug\netcoreapp3.1\Business.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\KUTAY\Desktop\University 2022-2023-2\YMG Github Dosyası\RentACar University\ymg-donem-projesi-182523059\Business\obj\Debug\netcoreapp3.1\Business.AssemblyInfoInputs.cache
+C:\Users\KUTAY\Desktop\University 2022-2023-2\YMG Github Dosyası\RentACar University\ymg-donem-projesi-182523059\Business\obj\Debug\netcoreapp3.1\Business.AssemblyInfo.cs
+C:\Users\KUTAY\Desktop\University 2022-2023-2\YMG Github Dosyası\RentACar University\ymg-donem-projesi-182523059\Business\obj\Debug\netcoreapp3.1\Business.csproj.CoreCompileInputs.cache

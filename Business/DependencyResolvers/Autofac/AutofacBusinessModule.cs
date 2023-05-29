@@ -8,6 +8,7 @@ using DataAccess.Abstract;
 using DataAccess.Concrete.EntityFramework;
 using System;
 using System.Collections.Generic;
+using System.IdentityModel.Tokens.Jwt;
 using System.Text;
 
 namespace Business.DependencyResolvers.Autofac
@@ -21,27 +22,32 @@ namespace Business.DependencyResolvers.Autofac
             //WebAPI---->Program.cs
             //birisi senden ICarService isterse CarManager instance'ı ver
             //SingleInstance : Tek bir instance oluşturur
-
             builder.RegisterType<CarManager>().As<ICarService>().SingleInstance();
-            builder.RegisterType<EfCarDal>().As<ICarDal>().SingleInstance();
+            builder.RegisterType<EFCarDAL>().As<ICarDAL>().SingleInstance();
 
             builder.RegisterType<BrandManager>().As<IBrandService>().SingleInstance();
-            builder.RegisterType<EfBrandDal>().As<IBrandDal>().SingleInstance();
-
-            builder.RegisterType<ColorManager>().As<IColorService>().SingleInstance();
-            builder.RegisterType<EfColorDal>().As<IColorDal>().SingleInstance();
-
-            builder.RegisterType<CustomerManager>().As<ICustomerService>().SingleInstance();
-            builder.RegisterType<EfCustomerDal>().As<ICustomerDal>().SingleInstance();
+            builder.RegisterType<EFBrandDAL>().As<IBrandDAL>().SingleInstance();
 
             builder.RegisterType<RentalManager>().As<IRentalService>().SingleInstance();
-            builder.RegisterType<EfRentalDal>().As<IRentalDal>().SingleInstance();
+            builder.RegisterType<EFRentalDAL>().As<IRentalDAL>().SingleInstance();
+
+            builder.RegisterType<ColorManager>().As<IColorService>().SingleInstance();
+            builder.RegisterType<EFColorDAL>().As<IColorDAL>().SingleInstance();
+
+            builder.RegisterType<CustomerManager>().As<ICustomerService>().SingleInstance();
+            builder.RegisterType<EFCustomerDAL>().As<ICustomerDAL>().SingleInstance();
 
             builder.RegisterType<UserManager>().As<IUserService>().SingleInstance();
-            builder.RegisterType<EfUserDal>().As<IUserDal>().SingleInstance();
+            builder.RegisterType<EFUserDAL>().As<IUserDAL>().SingleInstance();
 
-           
+            builder.RegisterType<CarImageManager>().As<ICarImageService>().SingleInstance();
+            builder.RegisterType<EFCarImageDAL>().As<ICarImageDAL>().SingleInstance();
 
+            builder.RegisterType<AuthManager>().As<IAuthService>();
+            builder.RegisterType<JWTHelper>().As<ITokenHelper>();
+
+            builder.RegisterType<CreditCardManager>().As<ICreditCardService>();
+            builder.RegisterType<EFCreditCardDAL>().As<ICreditCardDAL>();
 
             var assembly = System.Reflection.Assembly.GetExecutingAssembly();
 

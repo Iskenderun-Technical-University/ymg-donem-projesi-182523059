@@ -15,6 +15,7 @@
 
   <ItemGroup>
     <Folder Include="Concrete\InMemory\" />
+    <Folder Include="Migrations\" />
   </ItemGroup>
 
 </Project>

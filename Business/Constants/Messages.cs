@@ -6,45 +6,29 @@ namespace Business.Constants
 {
     public static class Messages
     {
-        //CAR
-        public static string CarAdded = "Araba Eklendi";
-        public static string CarNameInvalid = "Araba İsmi Geçersiz";
-        public static string CarDeleted = "Araba Silindi";
-        public static string MaintenanceTime = "Sistem Bakımda";
-        public static string CarsListed = "Arabalar Listelendi";
-        public static string CarUpdated = "Araba Güncellendi";
-        public static string CarListed = "Araba Listelendi";
+        public static string NoCar = "There is NO car with this details";
 
-        //BRAND
-        public static string BrandAdded = "Marka Eklendi";
-        public static string BrandUpdated = "Marka Güncellendi";
-        public static string BrandDeleted = "Marka Silindi";
-        public static string BrandsListed = "Marklarar Listelendi";
+        public static string NotEnough = "Score not enough";
 
-        //COLOR
-        public static string ColorAdded = "Renk Eklendi";
-        public static string ColorDeleted = "Renk Silindi";
-        public static string ColorUpdated = "Renk Güncellendi";
-        public static string ColorsListed = "Renkler Listelendi";
+        public static string NotCarAvailable = "NOT available";
 
-        //CUSTOMER
-        public static string CompanyNameInvalid = "Şirket Adı Geçersiz";
-        public static string CustomerAdded = "Müşteri Eklendi";
-        public static string CustomerDeleted = "Müşteri Silindi";
-        public static string CustomerUpdated = "Müşteri Güncellendi";
-        public static string CustomersListed = "Müşteriler Listelendi";
+        public static string MaintenanceTime = "System is under maintenance";
 
-        //Rental
-        public static string RentalsListed = "Kiralamalar Listelendi";
-        public static string CarHired = "Araba kiralama başarılı";
-        public static string CarNotDelivered = "Araba kiralama başarısız";
-       
+        public static string CarImageLimitExceeded = "More than 5 images cannot be added";
 
-        //USER
-        public static string UserAdded = "Kullanıcı Eklendi";
-        public static string UserDeleted = "Kullanıcı Silindi";
-        public static string UserUpdated = "Kullanıcı Güncellendi";
-        public static string UsersListed = "Kullanıcılar Listelendi";
+        public static string UserNotFound = "User not found";
+
+        public static string PasswordError = "Wrong Password";
+
+        public static string UserAlreadyExists = "User Already Exists";
+
+        public static string UserRegistered = "Success User Registered";
+
+        public static string LoginSuccess = "Successfully";
+
+        public static string AuthorizationDenied = "Authorization Denied";
+
+        public static string CardExist = "There is the credit card"; 
 
 
        

@@ -1,7 +1,11 @@
 ﻿using Business.Abstract;
+using Business.BusinessAspect.Autofac;
 using Business.Constants;
+using Business.ValidationRules.FluentValidation;
+using Core.Aspects.Autofac.Validation;
 using Core.Utilities.Results;
 using DataAccess.Abstract;
+using DataAccess.Concrete.EntityFramework;
 using Entities.Concrete;
 using Entities.DTOs;
 using System;
@@ -12,49 +16,63 @@ namespace Business.Concrete
 {
     public class CustomerManager : ICustomerService
     {
-        ICustomerDal _customerDal;
-        public CustomerManager(ICustomerDal customerDal)
+        ICustomerDAL _customerDAL;
+        Random _random;
+        public CustomerManager(ICustomerDAL customerDAL)
         {
-            _customerDal = customerDal;
+            _customerDAL = customerDAL;
+            _random = new Random();
+
         }
+
+        [SecuredOperation("admin,user")]
+        [CacheRemoveAspect("ICustomerService.Get")]
+        [ValidationAspect(typeof(CustomerValidator))]
         public IResult Add(Customer customer)
         {
-            if (customer.CompanyName.Length < 2)
-            {
-                return new ErrorResult(Messages.CompanyNameInvalid);
-            }
-            _customerDal.Add(customer);
-            return new SuccessResult(Messages.CustomerAdded);
+            customer.FindexScore = _random.Next(0, 1900);
+            _customerDAL.Add(customer);
+            return new SuccessResult();
         }
 
+        [SecuredOperation("customers.add,admin")]
+        [CacheRemoveAspect("ICustomerService.Get")]
+        [ValidationAspect(typeof(CustomerValidator))]
         public IResult Delete(Customer customer)
         {
-            _customerDal.Delete(customer);
-            return new SuccessResult(Messages.CustomerDeleted);
+            _customerDAL.Delete(customer);
+            return new SuccessResult();
         }
 
-        public IDataResult<List<Customer>> GetAll()
-        {
-            if(DateTime.Now.Hour == 21)
-            {
-                return new ErrorDataResult<List<Customer>>(Messages.MaintenanceTime);
-            }
-            return new SuccessDataResult<List<Customer>>(_customerDal.GetAll(), Messages.CustomersListed);
-        }
-
-        public IDataResult<List<CustomerDetailDto>> GetCustomerDetail()
-        {
-            if (DateTime.Now.Hour == 11)
-            {
-                return new ErrorDataResult<List<CustomerDetailDto>>(Messages.MaintenanceTime);
-            }
-            return new SuccessDataResult<List<CustomerDetailDto>>(_customerDal.GetCustomerDetails());
-        }
-
+        [SecuredOperation("admin,user")]
+        [CacheRemoveAspect("ICustomerService.Get")]
+        [ValidationAspect(typeof(CustomerValidator))]
         public IResult Update(Customer customer)
         {
-            _customerDal.Update(customer);
-            return new SuccessResult(Messages.CustomerUpdated);
+            _customerDAL.Update(customer);
+            return new SuccessResult();
+        }
+
+        [CacheAspect]
+        public IDataResult<List<Customer>> GetCustomers()
+        {
+            return new SuccessDataResult<List<Customer>>(_customerDAL.GetAll());
+        }
+
+        [CacheAspect]
+        public IDataResult<Customer> GetById(int id)
+        {
+            return new SuccessDataResult<Customer>(_customerDAL.Get(c => c.Id == id));
+        }
+
+        public IDataResult<List<CustomerDetailDto>> GetCustomerDetails()
+        {
+            return new SuccessDataResult<List<CustomerDetailDto>>(_customerDAL.GetCustomerDetailDto());
+        }
+
+        public IDataResult<List<CustomerDetailDto>> GetCustomerDetailByUserId(int userId)
+        {
+            return new SuccessDataResult<List<CustomerDetailDto>>(_customerDAL.GetCustomerDetailDto(u => u.UserId == userId));
         }
     }
 }
