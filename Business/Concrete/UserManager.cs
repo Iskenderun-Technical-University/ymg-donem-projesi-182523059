@@ -2,7 +2,6 @@
 using Business.Constants;
 using Core.Utilities.Results;
 using DataAccess.Abstract;
-using DataAccess.Concrete.EntityFramework;
 using Entities.Concrete;
 using System;
 using System.Collections.Generic;
@@ -12,72 +11,32 @@ namespace Business.Concrete
 {
     public class UserManager : IUserService
     {
-        IUserDAL _userDAL;
-
-        public UserManager(IUserDAL userDAL)
+        IUserDal _userDal;
+        public UserManager(IUserDal userDal)
         {
-            _userDAL = userDAL;
+            _userDal = userDal;
         }
-
-        public IDataResult<User> GetById(int userId)
-        {
-            return new SuccessDataResult<User>(_userDAL.Get(u => u.Id == userId));
-        }
-
-        public IDataResult<List<OperationClaim>> GetClaims(User user)
-        {
-            return new SuccessDataResult<List<OperationClaim>>(_userDAL.GetClaims(user));
-        }
-
         public IResult Add(User user)
         {
-            _userDAL.Add(user);
-            return new SuccessResult();
-        }
-
-        public IResult Update(User user)
-        {
-            _userDAL.Update(user);
-            return new SuccessResult();
-
-        }
-
-        public IResult EditProfile(UserForUpdateDto user)
-        {
-            byte[] passwordHash;
-            byte[] passwordSalt;
-
-            HashingHelper.CreatePasswordHash(user.Password, out passwordHash, out passwordSalt);
-
-            var userInfo = new User()
-            {
-                Id = user.Id,
-                FirstName = user.FirstName,
-                LastName = user.LastName,
-                Email = user.Email,
-                PasswordHash = passwordHash,
-                PasswordSalt = passwordSalt,
-                Status = true
-            };
-
-            _userDAL.Update(userInfo);
-            return new SuccessResult();
+            _userDal.Add(user);
+            return new SuccessResult(Messages.UserAdded);
         }
 
         public IResult Delete(User user)
         {
-            _userDAL.Delete(user);
-            return new SuccessResult();
+            _userDal.Delete(user);
+            return new SuccessResult(Messages.UserDeleted);
         }
 
         public IDataResult<List<User>> GetAll()
         {
-            return new SuccessDataResult<List<User>>(_userDAL.GetAll());
+            return new SuccessDataResult<List<User>>(_userDal.GetAll(),Messages.UsersListed);
         }
 
-        public IDataResult<User> GetByMail(string email)
+        public IResult Update(User user)
         {
-            return new SuccessDataResult<User>(_userDAL.Get(u => u.Email == email));
+            _userDal.Update(user);
+            return new SuccessResult(Messages.UserUpdated);
         }
     }
 }

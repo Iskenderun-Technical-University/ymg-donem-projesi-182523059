@@ -1,11 +1,7 @@
 ﻿using Business.Abstract;
-using Business.BusinessAspect.Autofac;
 using Business.Constants;
-using Business.ValidationRules.FluentValidation;
-using Core.Aspects.Autofac.Validation;
 using Core.Utilities.Results;
 using DataAccess.Abstract;
-using DataAccess.Concrete.EntityFramework;
 using Entities.Concrete;
 using System;
 using System.Collections.Generic;
@@ -15,49 +11,35 @@ namespace Business.Concrete
 {
     public class BrandManager : IBrandService
     {
-        IBrandDAL _brandDAL;
-        public BrandManager(IBrandDAL brandDal)
+        IBrandDal _brandDal;
+
+        public BrandManager(IBrandDal brandDal)
         {
-            _brandDAL = brandDal;
+            _brandDal = brandDal;
         }
 
-        [ValidationAspect(typeof(BrandValidator))]
-        [CacheRemoveAspect("IBrandService.Get")]
-        [SecuredOperation("brand.add,admin")]
         public IResult Add(Brand brand)
         {
-            _brandDAL.Add(brand);
-            return new SuccessResult();
+           
+            _brandDal.Add(brand);
+            return new SuccessResult(Messages.BrandAdded);
         }
 
-        [CacheRemoveAspect("IBrandService.Get")]
-        [SecuredOperation("brand.delete,admin")]
         public IResult Delete(Brand brand)
         {
-            _brandDAL.Delete(brand);
-            return new SuccessResult();
+            _brandDal.Delete(brand);
+            return new SuccessResult(Messages.BrandDeleted);
         }
 
-        [ValidationAspect(typeof(BrandValidator))]
-        [CacheRemoveAspect("IBrandService.Get")]
-        [SecuredOperation("brand.update,admin")]
+        public IDataResult<List<Brand>> GetAll()
+        {
+            return new SuccessDataResult<List<Brand>>(_brandDal.GetAll(), Messages.BrandsListed);
+        }
+
         public IResult Update(Brand brand)
         {
-            _brandDAL.Update(brand);
-            return new SuccessResult();
+            _brandDal.Update(brand);
+            return new SuccessResult(Messages.BrandUpdated);
         }
-
-        [CacheAspect]
-        public IDataResult<List<Brand>> GetBrands()
-        {
-            return new SuccessDataResult<List<Brand>>(_brandDAL.GetAll());
-        }
-
-        [CacheAspect]
-        public IDataResult<Brand> GetById(int id)
-        {
-            return new SuccessDataResult<Brand>(_brandDAL.Get(b => b.BrandId == id));
-        }
-
     }
 }

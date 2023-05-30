@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\KUTAY\\Desktop\\University 2022-2023-2\\YMG Github Dosyası\\RentACar University\\ymg-donem-projesi-182523059\\Entities\\Entities.csproj": {}
+    "C:\\Users\\KUTAY\\Desktop\\C#\\1.Kodlama.io\\2.Rent A Car Project\\RentACar Tekrar\\RentACarT\\Entities\\Entities.csproj": {}
   },
   "projects": {
-    "C:\\Users\\KUTAY\\Desktop\\University 2022-2023-2\\YMG Github Dosyası\\RentACar University\\ymg-donem-projesi-182523059\\Core\\Core.csproj": {
+    "C:\\Users\\KUTAY\\Desktop\\C#\\1.Kodlama.io\\2.Rent A Car Project\\RentACar Tekrar\\RentACarT\\Core\\Core.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\KUTAY\\Desktop\\University 2022-2023-2\\YMG Github Dosyası\\RentACar University\\ymg-donem-projesi-182523059\\Core\\Core.csproj",
+        "projectUniqueName": "C:\\Users\\KUTAY\\Desktop\\C#\\1.Kodlama.io\\2.Rent A Car Project\\RentACar Tekrar\\RentACarT\\Core\\Core.csproj",
         "projectName": "Core",
-        "projectPath": "C:\\Users\\KUTAY\\Desktop\\University 2022-2023-2\\YMG Github Dosyası\\RentACar University\\ymg-donem-projesi-182523059\\Core\\Core.csproj",
+        "projectPath": "C:\\Users\\KUTAY\\Desktop\\C#\\1.Kodlama.io\\2.Rent A Car Project\\RentACar Tekrar\\RentACarT\\Core\\Core.csproj",
         "packagesPath": "C:\\Users\\KUTAY\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\KUTAY\\Desktop\\University 2022-2023-2\\YMG Github Dosyası\\RentACar University\\ymg-donem-projesi-182523059\\Core\\obj\\",
+        "outputPath": "C:\\Users\\KUTAY\\Desktop\\C#\\1.Kodlama.io\\2.Rent A Car Project\\RentACar Tekrar\\RentACarT\\Core\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
@@ -96,14 +96,14 @@
         }
       }
     },
-    "C:\\Users\\KUTAY\\Desktop\\University 2022-2023-2\\YMG Github Dosyası\\RentACar University\\ymg-donem-projesi-182523059\\Entities\\Entities.csproj": {
+    "C:\\Users\\KUTAY\\Desktop\\C#\\1.Kodlama.io\\2.Rent A Car Project\\RentACar Tekrar\\RentACarT\\Entities\\Entities.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\KUTAY\\Desktop\\University 2022-2023-2\\YMG Github Dosyası\\RentACar University\\ymg-donem-projesi-182523059\\Entities\\Entities.csproj",
+        "projectUniqueName": "C:\\Users\\KUTAY\\Desktop\\C#\\1.Kodlama.io\\2.Rent A Car Project\\RentACar Tekrar\\RentACarT\\Entities\\Entities.csproj",
         "projectName": "Entities",
-        "projectPath": "C:\\Users\\KUTAY\\Desktop\\University 2022-2023-2\\YMG Github Dosyası\\RentACar University\\ymg-donem-projesi-182523059\\Entities\\Entities.csproj",
+        "projectPath": "C:\\Users\\KUTAY\\Desktop\\C#\\1.Kodlama.io\\2.Rent A Car Project\\RentACar Tekrar\\RentACarT\\Entities\\Entities.csproj",
         "packagesPath": "C:\\Users\\KUTAY\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\KUTAY\\Desktop\\University 2022-2023-2\\YMG Github Dosyası\\RentACar University\\ymg-donem-projesi-182523059\\Entities\\obj\\",
+        "outputPath": "C:\\Users\\KUTAY\\Desktop\\C#\\1.Kodlama.io\\2.Rent A Car Project\\RentACar Tekrar\\RentACarT\\Entities\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
@@ -127,8 +127,8 @@
           "netcoreapp3.1": {
             "targetAlias": "netcoreapp3.1",
             "projectReferences": {
-              "C:\\Users\\KUTAY\\Desktop\\University 2022-2023-2\\YMG Github Dosyası\\RentACar University\\ymg-donem-projesi-182523059\\Core\\Core.csproj": {
-                "projectPath": "C:\\Users\\KUTAY\\Desktop\\University 2022-2023-2\\YMG Github Dosyası\\RentACar University\\ymg-donem-projesi-182523059\\Core\\Core.csproj"
+              "C:\\Users\\KUTAY\\Desktop\\C#\\1.Kodlama.io\\2.Rent A Car Project\\RentACar Tekrar\\RentACarT\\Core\\Core.csproj": {
+                "projectPath": "C:\\Users\\KUTAY\\Desktop\\C#\\1.Kodlama.io\\2.Rent A Car Project\\RentACar Tekrar\\RentACarT\\Core\\Core.csproj"
               }
             }
           }

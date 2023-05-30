@@ -1,5 +1,34 @@
-C:\Users\KUTAY\Desktop\University 2022-2023-2\YMG Github Dosyası\RentACar University\ymg-donem-projesi-182523059\Business\obj\Debug\netcoreapp3.1\Business.csproj.AssemblyReference.cache
-C:\Users\KUTAY\Desktop\University 2022-2023-2\YMG Github Dosyası\RentACar University\ymg-donem-projesi-182523059\Business\obj\Debug\netcoreapp3.1\Business.GeneratedMSBuildEditorConfig.editorconfig
-C:\Users\KUTAY\Desktop\University 2022-2023-2\YMG Github Dosyası\RentACar University\ymg-donem-projesi-182523059\Business\obj\Debug\netcoreapp3.1\Business.AssemblyInfoInputs.cache
-C:\Users\KUTAY\Desktop\University 2022-2023-2\YMG Github Dosyası\RentACar University\ymg-donem-projesi-182523059\Business\obj\Debug\netcoreapp3.1\Business.AssemblyInfo.cs
-C:\Users\KUTAY\Desktop\University 2022-2023-2\YMG Github Dosyası\RentACar University\ymg-donem-projesi-182523059\Business\obj\Debug\netcoreapp3.1\Business.csproj.CoreCompileInputs.cache
+C:\Users\msı\Desktop\RentACar Tekrar\RentACarT\Business\bin\Debug\netcoreapp3.1\Business.deps.json
+C:\Users\msı\Desktop\RentACar Tekrar\RentACarT\Business\bin\Debug\netcoreapp3.1\Business.dll
+C:\Users\msı\Desktop\RentACar Tekrar\RentACarT\Business\bin\Debug\netcoreapp3.1\Business.pdb
+C:\Users\msı\Desktop\RentACar Tekrar\RentACarT\Business\bin\Debug\netcoreapp3.1\DataAccess.dll
+C:\Users\msı\Desktop\RentACar Tekrar\RentACarT\Business\bin\Debug\netcoreapp3.1\Entities.dll
+C:\Users\msı\Desktop\RentACar Tekrar\RentACarT\Business\bin\Debug\netcoreapp3.1\DataAccess.pdb
+C:\Users\msı\Desktop\RentACar Tekrar\RentACarT\Business\bin\Debug\netcoreapp3.1\Entities.pdb
+C:\Users\msı\Desktop\RentACar Tekrar\RentACarT\Business\obj\Debug\netcoreapp3.1\Business.csproj.AssemblyReference.cache
+C:\Users\msı\Desktop\RentACar Tekrar\RentACarT\Business\obj\Debug\netcoreapp3.1\Business.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\msı\Desktop\RentACar Tekrar\RentACarT\Business\obj\Debug\netcoreapp3.1\Business.AssemblyInfoInputs.cache
+C:\Users\msı\Desktop\RentACar Tekrar\RentACarT\Business\obj\Debug\netcoreapp3.1\Business.AssemblyInfo.cs
+C:\Users\msı\Desktop\RentACar Tekrar\RentACarT\Business\obj\Debug\netcoreapp3.1\Business.csproj.CoreCompileInputs.cache
+C:\Users\msı\Desktop\RentACar Tekrar\RentACarT\Business\obj\Debug\netcoreapp3.1\Business.csproj.CopyComplete
+C:\Users\msı\Desktop\RentACar Tekrar\RentACarT\Business\obj\Debug\netcoreapp3.1\Business.dll
+C:\Users\msı\Desktop\RentACar Tekrar\RentACarT\Business\obj\Debug\netcoreapp3.1\Business.pdb
+C:\Users\msı\Desktop\RentACar Tekrar\RentACarT\Business\bin\Debug\netcoreapp3.1\Core.dll
+C:\Users\msı\Desktop\RentACar Tekrar\RentACarT\Business\bin\Debug\netcoreapp3.1\Core.pdb
+C:\Users\KUTAY\Desktop\RentACar Tekrar\RentACarT\Business\bin\Debug\netcoreapp3.1\Business.deps.json
+C:\Users\KUTAY\Desktop\RentACar Tekrar\RentACarT\Business\bin\Debug\netcoreapp3.1\Business.dll
+C:\Users\KUTAY\Desktop\RentACar Tekrar\RentACarT\Business\bin\Debug\netcoreapp3.1\Business.pdb
+C:\Users\KUTAY\Desktop\RentACar Tekrar\RentACarT\Business\bin\Debug\netcoreapp3.1\Core.dll
+C:\Users\KUTAY\Desktop\RentACar Tekrar\RentACarT\Business\bin\Debug\netcoreapp3.1\DataAccess.dll
+C:\Users\KUTAY\Desktop\RentACar Tekrar\RentACarT\Business\bin\Debug\netcoreapp3.1\Entities.dll
+C:\Users\KUTAY\Desktop\RentACar Tekrar\RentACarT\Business\bin\Debug\netcoreapp3.1\DataAccess.pdb
+C:\Users\KUTAY\Desktop\RentACar Tekrar\RentACarT\Business\bin\Debug\netcoreapp3.1\Entities.pdb
+C:\Users\KUTAY\Desktop\RentACar Tekrar\RentACarT\Business\bin\Debug\netcoreapp3.1\Core.pdb
+C:\Users\KUTAY\Desktop\RentACar Tekrar\RentACarT\Business\obj\Debug\netcoreapp3.1\Business.csproj.AssemblyReference.cache
+C:\Users\KUTAY\Desktop\RentACar Tekrar\RentACarT\Business\obj\Debug\netcoreapp3.1\Business.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\KUTAY\Desktop\RentACar Tekrar\RentACarT\Business\obj\Debug\netcoreapp3.1\Business.AssemblyInfoInputs.cache
+C:\Users\KUTAY\Desktop\RentACar Tekrar\RentACarT\Business\obj\Debug\netcoreapp3.1\Business.AssemblyInfo.cs
+C:\Users\KUTAY\Desktop\RentACar Tekrar\RentACarT\Business\obj\Debug\netcoreapp3.1\Business.csproj.CoreCompileInputs.cache
+C:\Users\KUTAY\Desktop\RentACar Tekrar\RentACarT\Business\obj\Debug\netcoreapp3.1\Business.csproj.CopyComplete
+C:\Users\KUTAY\Desktop\RentACar Tekrar\RentACarT\Business\obj\Debug\netcoreapp3.1\Business.dll
+C:\Users\KUTAY\Desktop\RentACar Tekrar\RentACarT\Business\obj\Debug\netcoreapp3.1\Business.pdb

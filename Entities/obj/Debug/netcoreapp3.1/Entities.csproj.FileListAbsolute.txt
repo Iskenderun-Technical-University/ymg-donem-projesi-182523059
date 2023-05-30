@@ -1,5 +1,26 @@
-C:\Users\KUTAY\Desktop\University 2022-2023-2\YMG Github Dosyası\RentACar University\ymg-donem-projesi-182523059\Entities\obj\Debug\netcoreapp3.1\Entities.csproj.AssemblyReference.cache
-C:\Users\KUTAY\Desktop\University 2022-2023-2\YMG Github Dosyası\RentACar University\ymg-donem-projesi-182523059\Entities\obj\Debug\netcoreapp3.1\Entities.GeneratedMSBuildEditorConfig.editorconfig
-C:\Users\KUTAY\Desktop\University 2022-2023-2\YMG Github Dosyası\RentACar University\ymg-donem-projesi-182523059\Entities\obj\Debug\netcoreapp3.1\Entities.AssemblyInfoInputs.cache
-C:\Users\KUTAY\Desktop\University 2022-2023-2\YMG Github Dosyası\RentACar University\ymg-donem-projesi-182523059\Entities\obj\Debug\netcoreapp3.1\Entities.AssemblyInfo.cs
-C:\Users\KUTAY\Desktop\University 2022-2023-2\YMG Github Dosyası\RentACar University\ymg-donem-projesi-182523059\Entities\obj\Debug\netcoreapp3.1\Entities.csproj.CoreCompileInputs.cache
+C:\Users\msı\Desktop\RentACar Tekrar\RentACarT\Entities\bin\Debug\netcoreapp3.1\Entities.deps.json
+C:\Users\msı\Desktop\RentACar Tekrar\RentACarT\Entities\bin\Debug\netcoreapp3.1\Entities.dll
+C:\Users\msı\Desktop\RentACar Tekrar\RentACarT\Entities\bin\Debug\netcoreapp3.1\Entities.pdb
+C:\Users\msı\Desktop\RentACar Tekrar\RentACarT\Entities\obj\Debug\netcoreapp3.1\Entities.csproj.AssemblyReference.cache
+C:\Users\msı\Desktop\RentACar Tekrar\RentACarT\Entities\obj\Debug\netcoreapp3.1\Entities.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\msı\Desktop\RentACar Tekrar\RentACarT\Entities\obj\Debug\netcoreapp3.1\Entities.AssemblyInfoInputs.cache
+C:\Users\msı\Desktop\RentACar Tekrar\RentACarT\Entities\obj\Debug\netcoreapp3.1\Entities.AssemblyInfo.cs
+C:\Users\msı\Desktop\RentACar Tekrar\RentACarT\Entities\obj\Debug\netcoreapp3.1\Entities.csproj.CoreCompileInputs.cache
+C:\Users\msı\Desktop\RentACar Tekrar\RentACarT\Entities\obj\Debug\netcoreapp3.1\Entities.dll
+C:\Users\msı\Desktop\RentACar Tekrar\RentACarT\Entities\obj\Debug\netcoreapp3.1\Entities.pdb
+C:\Users\msı\Desktop\RentACar Tekrar\RentACarT\Entities\bin\Debug\netcoreapp3.1\Core.dll
+C:\Users\msı\Desktop\RentACar Tekrar\RentACarT\Entities\bin\Debug\netcoreapp3.1\Core.pdb
+C:\Users\msı\Desktop\RentACar Tekrar\RentACarT\Entities\obj\Debug\netcoreapp3.1\Entities.csproj.CopyComplete
+C:\Users\KUTAY\Desktop\RentACar Tekrar\RentACarT\Entities\bin\Debug\netcoreapp3.1\Entities.deps.json
+C:\Users\KUTAY\Desktop\RentACar Tekrar\RentACarT\Entities\bin\Debug\netcoreapp3.1\Entities.dll
+C:\Users\KUTAY\Desktop\RentACar Tekrar\RentACarT\Entities\bin\Debug\netcoreapp3.1\Entities.pdb
+C:\Users\KUTAY\Desktop\RentACar Tekrar\RentACarT\Entities\bin\Debug\netcoreapp3.1\Core.dll
+C:\Users\KUTAY\Desktop\RentACar Tekrar\RentACarT\Entities\bin\Debug\netcoreapp3.1\Core.pdb
+C:\Users\KUTAY\Desktop\RentACar Tekrar\RentACarT\Entities\obj\Debug\netcoreapp3.1\Entities.csproj.AssemblyReference.cache
+C:\Users\KUTAY\Desktop\RentACar Tekrar\RentACarT\Entities\obj\Debug\netcoreapp3.1\Entities.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\KUTAY\Desktop\RentACar Tekrar\RentACarT\Entities\obj\Debug\netcoreapp3.1\Entities.AssemblyInfoInputs.cache
+C:\Users\KUTAY\Desktop\RentACar Tekrar\RentACarT\Entities\obj\Debug\netcoreapp3.1\Entities.AssemblyInfo.cs
+C:\Users\KUTAY\Desktop\RentACar Tekrar\RentACarT\Entities\obj\Debug\netcoreapp3.1\Entities.csproj.CoreCompileInputs.cache
+C:\Users\KUTAY\Desktop\RentACar Tekrar\RentACarT\Entities\obj\Debug\netcoreapp3.1\Entities.csproj.CopyComplete
+C:\Users\KUTAY\Desktop\RentACar Tekrar\RentACarT\Entities\obj\Debug\netcoreapp3.1\Entities.dll
+C:\Users\KUTAY\Desktop\RentACar Tekrar\RentACarT\Entities\obj\Debug\netcoreapp3.1\Entities.pdb

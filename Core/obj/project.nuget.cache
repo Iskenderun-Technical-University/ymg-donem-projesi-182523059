@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "UuPPjUQcXoZhUHrAZfqW7eu07WRKxtlO8UMtspEcvqkUrhYd+CE2xBqpBZZrNd+Qa5v+zbkH/cXLCOUkWoulOA==",
+  "dgSpecHash": "l0qyeVilPiVH16A2vqlBdSUZ3X3iIgj192cAtT9Q77HYpbmIvmCGVpmcQsrmUk+bav56UrbAFuXyeGHIncv2ZQ==",
   "success": true,
-  "projectFilePath": "C:\\Users\\KUTAY\\Desktop\\University 2022-2023-2\\YMG Github Dosyası\\RentACar University\\ymg-donem-projesi-182523059\\Core\\Core.csproj",
+  "projectFilePath": "C:\\Users\\KUTAY\\Desktop\\C#\\1.Kodlama.io\\2.Rent A Car Project\\RentACar Tekrar\\RentACarT\\Core\\Core.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\KUTAY\\.nuget\\packages\\autofac\\6.1.0\\autofac.6.1.0.nupkg.sha512",
     "C:\\Users\\KUTAY\\.nuget\\packages\\autofac.extensions.dependencyinjection\\7.1.0\\autofac.extensions.dependencyinjection.7.1.0.nupkg.sha512",
