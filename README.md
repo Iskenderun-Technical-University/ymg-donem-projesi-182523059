@@ -3,7 +3,7 @@
 <ol>
   <li><a href="https://github.com/Iskenderun-Technical-University/ymg-donem-projesi-182523059/blob/main/Other/RentACarProjeTan%C4%B1t%C4%B1m.pdf">Proje Ön Tanıtım Link</li>
   <li><a href="https://github.com/Iskenderun-Technical-University/ymg-donem-projesi-182523059/blob/main/Other/Use%20Case%20Diagram.jpg">Use Case Diagram Link</li>
-  <li><a href=" https://github.com/Iskenderun-Technical-University/ymg-donem-projesi-182523059/blob/main/Other/YMG_Proje_Raporu_Kutay_T%C4%B1st%C4%B1k_182523059.pdf">Proje Raporu Link</li>
+  <li><a href="https://github.com/Iskenderun-Technical-University/ymg-donem-projesi-182523059/blob/main/Other/YMG_Proje_Raporu_Kutay_T%C4%B1st%C4%B1k_182523059.pdf">Proje Raporu Link</li>
    
 </ol>
 
